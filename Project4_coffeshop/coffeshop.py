@@ -24,8 +24,6 @@ def main():
 
     check_if_customer_is_evil(name)
 
-    menu: list = ["Black Coffee", "Espresso", "Latte", "Cappucino"]
-
     welcome_text = (
         f"{name}, what would you like to order today? "
         "Here is what we are serving:" 
