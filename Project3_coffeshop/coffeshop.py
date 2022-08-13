@@ -43,7 +43,7 @@ def main():
     elif order == "Latte".lower():
         whipcream = _get_sanitized_input("Would you like whip cream with that?\n")
         if whipcream == "yes":
-            still_wants_whipcream = _get_sanitized_input("It's two more dollars is that ok?")
+            still_wants_whipcream = _get_sanitized_input("It's two more dollars is that ok?\n")
             if still_wants_whipcream == "yes":
                 price = 9
                 print("Perfect! I'll get right on that")
