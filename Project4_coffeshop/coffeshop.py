@@ -12,6 +12,8 @@ def check_if_customer_is_evil(name: str = None):
     print (f"Hello {name} thanks for coming in!" )
 
 def _get_sanitized_input(input_text: str = None):
+    # if you don't do this check there's a bug 
+    # with calling _get_sanitized_input() without parameters
     if not input_text:
         return input()
     customer_input = input(input_text)
