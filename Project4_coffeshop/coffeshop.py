@@ -66,9 +66,9 @@ def main():
         price = menu_item['price']
         if menu_item['offer_whipped_cream']:
             wants_whipped_cream = _get_sanitized_input("Would you like whip cream with that?\n")
-            if wants_whipped_cream:
+            if wants_whipped_cream.lower() == 'yes' or still_wants_whipcream:
                 still_wants_whipcream = _get_sanitized_input("It's two more dollars is that ok?\n")
-                if still_wants_whipcream:
+                if still_wants_whipcream.lower() == 'yes' or still_wants_whipcream:
                     price = price + 2
     else:
         print(f"Sorry, we don't have {order} here.")
